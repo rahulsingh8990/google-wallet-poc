@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Google Wallet POC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <h1>Student Pass</h1>
+
+  <p>Add your student pass to Google Wallet.</p>
+  <ion-card-content>
+    <ion-button expand="block" (click)="addToWallet()">
+      Add to Google Wallet(Vanilla JS and localhost)
+    </ion-button>
+  </ion-card-content>
+  <ion-button expand="block" (click)="addToWalletNative()">
+    Add to Google Wallet(vanilla JS but Android)
+  </ion-button>
+  <ion-button expand="block" color="secondary" (click)="checkNativeWallet()">
+    Check Native Wallet(Check if Google Wallet is installed on device)
+  </ion-button>
+  <ion-button expand="block" color="success" (click)="saveViaNativeWallet()">
+    Save via Native Wallet
+  </ion-button>
+</ion-content>
